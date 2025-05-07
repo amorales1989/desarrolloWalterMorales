@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav>
+        <button onclick="window.location.href='home.html'">Home</button>
+        <button onclick="window.location.href='productos.html'">Productos</button>
+        <button onclick="window.location.href='carrito.html'" class="active">Carrito</button>
+        <button onclick="window.location.href='pago.html'">Pagar</button>
+    </nav>
+
+    <div class="container cart-container">
+        <h1>Carrito de Compras</h1>
+        
+        <div class="cart-wrapper">
+            <div class="cart-items">
+                <div class="cart-item">
+                    <div class="item-image">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <div class="item-details">
+                        <h3>Producto 1</h3>
+                        <p class="item-description">Descripción breve del producto 1</p>
+                    </div>
+                    <div class="item-quantity">
+                        <button class="quantity-btn">-</button>
+                        <span>1</span>
+                        <button class="quantity-btn">+</button>
+                    </div>
+                    <div class="item-price">$19.99</div>
+                    <div class="item-remove">
+                        <button class="remove-btn">🗑️</button>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <div class="item-image">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <div class="item-details">
+                        <h3>Producto 2</h3>
+                        <p class="item-description">Descripción breve del producto 2</p>
+                    </div>
+                    <div class="item-quantity">
+                        <button class="quantity-btn">-</button>
+                        <span>2</span>
+                        <button class="quantity-btn">+</button>
+                    </div>
+                    <div class="item-price">$24.99</div>
+                    <div class="item-remove">
+                        <button class="remove-btn">🗑️</button>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <div class="item-image">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <div class="item-details">
+                        <h3>Producto 3</h3>
+                        <p class="item-description">Descripción breve del producto 3</p>
+                    </div>
+                    <div class="item-quantity">
+                        <button class="quantity-btn">-</button>
+                        <span>1</span>
+                        <button class="quantity-btn">+</button>
+                    </div>
+                    <div class="item-price">$29.99</div>
+                    <div class="item-remove">
+                        <button class="remove-btn">🗑️</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-summary">
+                <h2>Resumen</h2>
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span>$99.96</span>
+                </div>
+                <div class="summary-row">
+                    <span>Envío:</span>
+                    <span>$5.00</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total:</span>
+                    <span>$104.96</span>
+                </div>
+                <button class="checkout-btn">Proceder al pago</button>
+                <button class="continue-shopping">Seguir comprando</button>
+            </div>
+        </div>
+
+        <div class="empty-cart" style="display: none;">
+            <div class="empty-cart-message">
+                <h2>Tu carrito está vacío</h2>
+                <p>Parece que aún no has añadido productos a tu carrito.</p>
+                <button class="continue-shopping">Explorar productos</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer py-2 bg-body-tertiary">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 mb-1">
+              <h5 class="text-coral">Desarrollo Web</h5>
+              <p class="text-muted small mb-0">Soluciones innovadoras para tu negocio en línea.</p>
+            </div>
+            
+            <div class="col-md-4 mb-1">
+              <h5 class="text-coral">Enlaces Rápidos</h5>
+              <div class="d-flex flex-wrap">
+                <a href="#" class="text-decoration-none text-muted me-3">Inicio</a>
+                <a href="productos.html" class="text-decoration-none text-muted me-3">Productos</a>
+                <a href="carrito.html" class="text-decoration-none text-muted me-3">Carrito</a>
+              </div>
+            </div>
+            
+            <div class="col-md-4 mb-1">
+              <h5 class="text-coral">Contacto</h5>
+              <p class="text-muted small mb-0">
+                <span class="d-block">info@desarrolloweb.com</span>
+                <span>+1 234 567 890</span>
+              </p>
+            </div>
+          </div>
+          
+          <div class="row mt-1">
+            <div class="col-12 text-center">
+              <p class="text-muted copyright mb-0">&copy; 2025 Desarrollo Web. Todos los derechos reservados.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>

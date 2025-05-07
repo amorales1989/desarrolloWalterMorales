@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav>
+        <button onclick="window.location.href='home.html'">Home</button>
+        <button onclick="window.location.href='productos.html'" class="active">Productos</button>
+        <button onclick="window.location.href='carrito.html'">Carrito</button>
+        <button onclick="window.location.href='pago.html'">Pagar</button>
+    </nav>
+
+    <div class="container products-container">
+        <h1>Catálogo de Productos</h1>
+        
+        <div class="filters">
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar productos...">
+                <button class="search-btn">🔍</button>
+            </div>
+            <div class="category-filter">
+                <select>
+                    <option value="">Todas las categorías</option>
+                    <option value="electronics">Electrónica</option>
+                    <option value="clothing">Ropa</option>
+                    <option value="home">Hogar</option>
+                    <option value="beauty">Belleza</option>
+                </select>
+            </div>
+            <div class="sort-filter">
+                <select>
+                    <option value="relevance">Relevancia</option>
+                    <option value="price-low">Precio: Menor a Mayor</option>
+                    <option value="price-high">Precio: Mayor a Menor</option>
+                    <option value="newest">Más recientes</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="image-placeholder"></div>
+                </div>
+                <div class="product-info">
+                    <h3>Smartphone XYZ</h3>
+                    <p class="product-description">Teléfono inteligente con pantalla de 6.5", 128GB de almacenamiento y cámara de 48MP.</p>
+                    <div class="product-price">
+                        <span class="price">$599.99</span>
+                    </div>
+                    <button class="add-to-cart">Añadir al carrito</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="image-placeholder"></div>
+                </div>
+                <div class="product-info">
+                    <h3>Auriculares Bluetooth</h3>
+                    <p class="product-description">Auriculares inalámbricos con cancelación de ruido y 20 horas de batería.</p>
+                    <div class="product-price">
+                        <span class="price">$109.99</span>
+                    </div>
+                    <button class="add-to-cart">Añadir al carrito</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="image-placeholder"></div>
+                </div>
+                <div class="product-info">
+                    <h3>Reloj Inteligente</h3>
+                    <p class="product-description">Smartwatch con monitor de ritmo cardíaco, GPS y resistente al agua.</p>
+                    <div class="product-price">
+                        <span class="price">$199.99</span>
+                    </div>
+                    <button class="add-to-cart">Añadir al carrito</button>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <div class="image-placeholder"></div>
+                </div>
+                <div class="product-info">
+                    <h3>Tablet Ultra HD</h3>
+                    <p class="product-description">Tablet de 10.5" con pantalla Ultra HD, procesador octa-core y 64GB de almacenamiento.</p>
+                    <div class="product-price">
+                        <span class="price">$349.99</span>
+                    </div>
+                    <button class="add-to-cart">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <button class="page-btn">4</button>
+            <button class="page-btn next">→</button>
+        </div>
+    </div>
+
+    <footer class="footer py-2 bg-body-tertiary">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 mb-1">
+              <h5 class="text-coral">Desarrollo Web</h5>
+              <p class="text-muted small mb-0">Soluciones innovadoras para tu negocio en línea.</p>
+            </div>
+            
+            <div class="col-md-4 mb-1">
+              <h5 class="text-coral">Enlaces Rápidos</h5>
+              <div class="d-flex flex-wrap">
+                <a href="#" class="text-decoration-none text-muted me-3">Inicio</a>
+                <a href="productos.html" class="text-decoration-none text-muted me-3">Productos</a>
+                <a href="carrito.html" class="text-decoration-none text-muted me-3">Carrito</a>
+              </div>
+            </div>
+            
+            <div class="col-md-4 mb-1">
+              <h5 class="text-coral">Contacto</h5>
+              <p class="text-muted small mb-0">
+                <span class="d-block">info@desarrolloweb.com</span>
+                <span>+1 234 567 890</span>
+              </p>
+            </div>
+          </div>
+          
+          <div class="row mt-1">
+            <div class="col-12 text-center">
+              <p class="text-muted copyright mb-0">&copy; 2025 Desarrollo Web. Todos los derechos reservados.</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+</body>
+</html>
