@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Administrativo</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-body">
+    <header class="admin-header">
+        <h1>Panel Administrativo</h1>
+        <div class="admin-nav">
+            <a href="home.html" class="admin-nav-link">Volver al Inicio</a>
+        </div>
+    </header>
+    
+    <main class="admin-main">
+        <section class="admin-controls">
+            <h2>Gestión de Productos</h2>
+            <button class="admin-btn admin-btn-add">Agregar Producto</button>
+        </section>
+        
+        <section class="admin-table-section">
+            <table class="admin-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Imagen</th>
+                        <th>Nombre</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                        <th>Categoría</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td class="admin-product-img">
+                            <div class="img-placeholder">IMG</div>
+                        </td>
+                        <td>Producto 1</td>
+                        <td>Descripción del producto 1</td>
+                        <td>$99.99</td>
+                        <td>Electrónica</td>
+                        <td class="admin-actions">
+                            <button class="admin-btn admin-btn-edit">Editar</button>
+                            <button class="admin-btn admin-btn-delete">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="admin-product-img">
+                            <div class="img-placeholder">IMG</div>
+                        </td>
+                        <td>Producto 2</td>
+                        <td>Descripción del producto 2</td>
+                        <td>$149.99</td>
+                        <td>Ropa</td>
+                        <td class="admin-actions">
+                            <button class="admin-btn admin-btn-edit">Editar</button>
+                            <button class="admin-btn admin-btn-delete">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="admin-product-img">
+                            <div class="img-placeholder">IMG</div>
+                        </td>
+                        <td>Producto 3</td>
+                        <td>Descripción del producto 3</td>
+                        <td>$49.99</td>
+                        <td>Hogar</td>
+                        <td class="admin-actions">
+                            <button class="admin-btn admin-btn-edit">Editar</button>
+                            <button class="admin-btn admin-btn-delete">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    
+    <footer class="admin-footer">
+        <p>&copy; 2025 Desarrollo Web. Panel Administrativo.</p>
+    </footer>
+</body>
+</html>

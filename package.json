@@ -1,5 +1,13 @@
 {
   "dependencies": {
     "bootstrap": "^5.3.5"
-  }
+  },
+  "devDependencies": {
+    "sass": "^1.89.0"
+  },
+  "scripts": {
+  "sass": "sass src/styles/admin.scss dist/admin.css",
+  "sass:watch": "sass --watch src/styles/admin.scss:dist/admin.css"
+}
+
 }
